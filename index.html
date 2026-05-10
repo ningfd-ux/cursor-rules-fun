@@ -3,59 +3,524 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursor Rules 中文库 - AI编程最佳实践</title>
-    <meta name="description" content="精选 Cursor Rules、最佳实践、Prompt 模板，让你的 AI 编程效率提升 10 倍！">
+    <title>Cursor Rules 中文库 - AI编程最佳实践与Prompt模板</title>
+    <meta name="description" content="精选 20+ Cursor Rules、AI编程最佳实践、Prompt 模板，涵盖 React、Python、Next.js、Vue 等场景，让你的 AI 编程效率提升 10 倍！">
+    <meta name="keywords" content="Cursor Rules, AI编程, Cursor教程, Cursor中文, AI编程提示词, Cursor Prompt, React Rules, Python Rules">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50">
-    <header class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-16">
-        <div class="max-w-4xl mx-auto px-4 text-center">
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 text-white py-16">
+        <div class="max-w-5xl mx-auto px-4 text-center">
             <h1 class="text-4xl md:text-5xl font-bold mb-4">Cursor Rules 中文库</h1>
-            <p class="text-xl opacity-90">精选 AI 编程最佳实践，让你的效率提升 10 倍！</p>
+            <p class="text-xl opacity-90 mb-6">精选 20+ AI 编程最佳实践，每个 Rule 都经过中文场景优化</p>
+            <div class="flex justify-center gap-4 text-sm opacity-75">
+                <span>🔥 持续更新</span>
+                <span>⚡ 一键复制</span>
+                <span>🎯 场景优化</span>
+            </div>
         </div>
     </header>
-    <main class="max-w-4xl mx-auto px-4 py-12">
+
+    <main class="max-5xl mx-auto px-4 py-12">
+
+        <!-- 分类导航 -->
+        <div class="flex flex-wrap gap-3 mb-10 justify-center">
+            <button class="px-4 py-2 bg-purple-600 text-white rounded-full text-sm font-medium hover:bg-purple-700 transition">🔥 全部</button>
+            <button class="px-4 py-2 bg-white border border-gray-300 text-gray-700 rounded-full text-sm font-medium hover:bg-gray-100 transition">⚛️ 前端开发</button>
+            <button class="px-4 py-2 bg-white border border-gray-300 text-gray-700 rounded-full text-sm font-medium hover:bg-gray-100 transition">🐍 Python</button>
+            <button class="px-4 py-2 bg-white border border-gray-300 text-gray-700 rounded-full text-sm font-medium hover:bg-gray-100 transition">🖥️ 后端</button>
+            <button class="px-4 py-2 bg-white border border-gray-300 text-gray-700 rounded-full text-sm font-medium hover:bg-gray-100 transition">🤖 AI/ML</button>
+            <button class="px-4 py-2 bg-white border border-gray-300 text-gray-700 rounded-full text-sm font-medium hover:bg-gray-100 transition">🔧 工具/调试</button>
+        </div>
+
+        <!-- ===== 前端开发 ===== -->
         <section class="mb-12">
-            <h2 class="text-2xl font-bold text-gray-800 mb-6">🔥 精选 Cursor Rules</h2>
-            <div class="space-y-4">
-                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
-                    <h3 class="text-lg font-bold text-purple-600 mb-2">通用编程专家</h3>
-                    <div class="bg-gray-800 text-green-400 p-4 rounded-lg text-sm font-mono overflow-x-auto">
-You are an expert software developer. Write clean, maintainable, well-documented code. Follow best practices and design patterns. Explain your reasoning step by step.
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">⚛️ 前端开发</h2>
+            <p class="text-gray-500 mb-6">适合 React、Next.js、Vue 等前端项目的中文开发场景</p>
+            <div class="grid gap-4">
+
+                <!-- React 专家 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h3 class="text-lg font-bold text-purple-600">React 前端专家</h3>
+                                <p class="text-sm text-gray-500 mt-1">🎯 适合：React + TypeScript 项目，含中文团队协作规范</p>
+                            </div>
+                            <button onclick="copyRule(this)" class="text-xs bg-purple-100 text-purple-600 px-3 py-1 rounded-full hover:bg-purple-200 transition">📋 复制</button>
+                        </div>
+                        <div class="bg-gray-900 text-green-400 p-5 rounded-xl text-sm font-mono overflow-x-auto leading-relaxed whitespace-pre-wrap">You are a React + TypeScript expert working with a Chinese development team.
+
+Key requirements:
+- Use modern React patterns (hooks, functional components)
+- Write clean, performant, and accessible components
+- Use Tailwind CSS for styling
+- All component comments and documentation in Chinese
+- Follow Chinese web accessibility standards (GB/T 37668)
+- Optimize for domestic CDN and WeChat mini-program compatibility
+
+Code style:
+- Prefer Composition over Inheritance
+- Use React.memo() for expensive components
+- Implement proper error boundaries
+- Write unit tests with Vitest</div>
                     </div>
                 </div>
-                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
-                    <h3 class="text-lg font-bold text-purple-600 mb-2">React 前端专家</h3>
-                    <div class="bg-gray-800 text-green-400 p-4 rounded-lg text-sm font-mono overflow-x-auto">
-You are a React + TypeScript expert. Use modern React patterns, hooks, and best practices. Write clean, performant, and accessible components. Use Tailwind CSS for styling.
+
+                <!-- Next.js 专家 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h3 class="text-lg font-bold text-purple-600">Next.js App Router 专家</h3>
+                                <p class="text-sm text-gray-500 mt-1">🎯 适合：Next.js 14+ 全栈项目，含服务端组件优化</p>
+                            </div>
+                            <button onclick="copyRule(this)" class="text-xs bg-purple-100 text-purple-600 px-3 py-1 rounded-full hover:bg-purple-200 transition">📋 复制</button>
+                        </div>
+                        <div class="bg-gray-900 text-green-400 p-5 rounded-xl text-sm font-mono overflow-x-auto leading-relaxed whitespace-pre-wrap">You are a Next.js expert specializing in App Router architecture.
+
+Key principles:
+- Default to Server Components, minimize 'use client'
+- Use Server Actions for form handling and data mutations
+- Implement proper ISR and SSG for static content
+- Optimize Core Web Vitals (LCP < 2.5s, FID < 100ms)
+- Use next/image for all images with WebP format
+- Implement route groups for better code organization
+- Use incremental static regeneration for dynamic pages
+- All documentation comments in Chinese</div>
                     </div>
                 </div>
-                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
-                    <h3 class="text-lg font-bold text-purple-600 mb-2">代码审查专家</h3>
-                    <div class="bg-gray-800 text-green-400 p-4 rounded-lg text-sm font-mono overflow-x-auto">
-Review this code critically. Find bugs, security issues, and performance problems. Suggest concrete improvements with code examples. Explain the reasoning behind each suggestion.
+
+                <!-- Vue.js 专家 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h3 class="text-lg font-bold text-purple-600">Vue.js 开发专家</h3>
+                                <p class="text-sm text-gray-500 mt-1">🎯 适合：Vue 3 + Composition API 项目</p>
+                            </div>
+                            <button onclick="copyRule(this)" class="text-xs bg-purple-100 text-purple-600 px-3 py-1 rounded-full hover:bg-purple-200 transition">📋 复制</button>
+                        </div>
+                        <div class="bg-gray-900 text-green-400 p-5 rounded-xl text-sm font-mono overflow-x-auto leading-relaxed whitespace-pre-wrap">You are a Vue.js 3 expert using Composition API.
+
+Key requirements:
+- Use script setup syntax
+- Prefer composables over mixins
+- Use TypeScript with strict mode
+- Follow Vue 3 official style guide
+- Use Pinia for state management
+- Implement proper async components with Suspense
+- All comments in Chinese for team collaboration
+- Use Vitest for unit testing</div>
                     </div>
                 </div>
+
+                <!-- Tailwind CSS -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h3 class="text-lg font-bold text-purple-600">Tailwind CSS 样式专家</h3>
+                                <p class="text-sm text-gray-500 mt-1">🎯 适合：需要高质量 UI 设计的页面开发</p>
+                            </div>
+                            <button onclick="copyRule(this)" class="text-xs bg-purple-100 text-purple-600 px-3 py-1 rounded-full hover:bg-purple-200 transition">📋 复制</button>
+                        </div>
+                        <div class="bg-gray-900 text-green-400 p-5 rounded-xl text-sm font-mono overflow-x-auto leading-relaxed whitespace-pre-wrap">You are a CSS/Tailwind expert focused on beautiful, responsive designs.
+
+Design principles:
+- Mobile-first responsive design
+- Consistent spacing and typography
+- Use CSS Grid and Flexbox appropriately
+- Implement dark mode support
+- Optimize for Chinese font rendering
+- Use CSS variables for theme colors
+- All breakpoints for Chinese mobile devices (iPhone, Huawei, Xiaomi)
+- Consider WeChat browser compatibility</div>
+                    </div>
+                </div>
+
             </div>
         </section>
+
+        <!-- ===== Python ===== -->
         <section class="mb-12">
-            <h2 class="text-2xl font-bold text-gray-800 mb-6">📁 分类浏览</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="bg-white p-4 rounded-lg shadow text-center"><span class="text-3xl">⚛️</span><p class="mt-2 font-medium">React</p></div>
-                <div class="bg-white p-4 rounded-lg shadow text-center"><span class="text-3xl">🐍</span><p class="mt-2 font-medium">Python</p></div>
-                <div class="bg-white p-4 rounded-lg shadow text-center"><span class="text-3xl">🎨</span><p class="mt-2 font-medium">前端开发</p></div>
-                <div class="bg-white p-4 rounded-lg shadow text-center"><span class="text-3xl">🔍</span><p class="mt-2 font-medium">代码审查</p></div>
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">🐍 Python 开发</h2>
+            <p class="text-gray-500 mb-6">从 FastAPI 到数据分析，完整 Python 生态</p>
+            <div class="grid gap-4">
+
+                <!-- Python 专家 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h3 class="text-lg font-bold text-purple-600">Python 全栈开发专家</h3>
+                                <p class="text-sm text-gray-500 mt-1">🎯 适合：Python 后端/数据项目，含国产框架适配</p>
+                            </div>
+                            <button onclick="copyRule(this)" class="text-xs bg-purple-100 text-purple-600 px-3 py-1 rounded-full hover:bg-purple-200 transition">📋 复制</button>
+                        </div>
+                        <div class="bg-gray-900 text-green-400 p-5 rounded-xl text-sm font-mono overflow-x-auto leading-relaxed whitespace-pre-wrap">You are a senior Python developer.
+
+Standards:
+- Use Python 3.11+ features (pattern matching, type hints)
+- Follow PEP 8 and use Black formatter
+- Type hints for all function signatures
+- Use Pydantic for data validation
+- Async/await for I/O operations
+- All docstrings in Chinese
+- Write comprehensive unit tests (pytest)
+- Consider domestic cloud services (阿里云/腾讯云 SDK compatibility)</div>
+                    </div>
+                </div>
+
+                <!-- FastAPI -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h3 class="text-lg font-bold text-purple-600">FastAPI 后端专家</h3>
+                                <p class="text-sm text-gray-500 mt-1">🎯 适合：高性能 API 服务开发</p>
+                            </div>
+                            <button onclick="copyRule(this)" class="text-xs bg-purple-100 text-purple-600 px-3 py-1 rounded-full hover:bg-purple-200 transition">📋 复制</button>
+                        </div>
+                        <div class="bg-gray-900 text-green-400 p-5 rounded-xl text-sm font-mono overflow-x-auto leading-relaxed whitespace-pre-wrap">You are a FastAPI expert building production APIs.
+
+Requirements:
+- Use async endpoints by default
+- Proper Pydantic schemas for request/response
+- Dependency injection for shared logic
+- JWT authentication with refresh tokens
+- Rate limiting and request validation
+- OpenAPI documentation in Chinese
+- PostgreSQL + SQLAlchemy async
+- Redis caching for hot data
+- Prometheus metrics for monitoring</div>
+                    </div>
+                </div>
+
+                <!-- 数据分析 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h3 class="text-lg font-bold text-purple-600">数据分析专家</h3>
+                                <p class="text-sm text-gray-500 mt-1">🎯 适合：Pandas/NumPy 数据处理任务</p>
+                            </div>
+                            <button onclick="copyRule(this)" class="text-xs bg-purple-100 text-purple-600 px-3 py-1 rounded-full hover:bg-purple-200 transition">📋 复制</button>
+                        </div>
+                        <div class="bg-gray-900 text-green-400 p-5 rounded-xl text-sm font-mono overflow-x-auto leading-relaxed whitespace-pre-wrap">You are a data analysis expert with Python.
+
+Methodology:
+- Use pandas for data manipulation
+- Vectorized operations over loops
+- Matplotlib/Plotly for Chinese-optimized visualizations
+- Handle Chinese encoding (UTF-8) properly
+- Use Jupyter Notebook for exploratory analysis
+- Document data cleaning steps in Chinese
+- Export results to Excel with formatting
+- Consider large dataset performance (chunking, Dask)</div>
+                    </div>
+                </div>
+
             </div>
         </section>
-        <section class="bg-gradient-to-r from-purple-100 to-indigo-100 rounded-xl p-8 text-center">
-            <h2 class="text-2xl font-bold text-gray-800 mb-4">💡 分享你的 Rule！</h2>
-            <p class="text-gray-600 mb-6">有好用的 Cursor Rules？欢迎 PR 分享给大家！</p>
+
+        <!-- ===== 后端开发 ===== -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">🖥️ 后端开发</h2>
+            <p class="text-gray-500 mb-6">Node.js、Go、数据库等后端场景</p>
+            <div class="grid gap-4">
+
+                <!-- Node.js 专家 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h3 class="text-lg font-bold text-purple-600">Node.js API 专家</h3>
+                                <p class="text-sm text-gray-500 mt-1">🎯 适合：Express/NestJS 后端服务</p>
+                            </div>
+                            <button onclick="copyRule(this)" class="text-xs bg-purple-100 text-purple-600 px-3 py-1 rounded-full hover:bg-purple-200 transition">📋 复制</button>
+                        </div>
+                        <div class="bg-gray-900 text-green-400 p-5 rounded-xl text-sm font-mono overflow-x-auto leading-relaxed whitespace-pre-wrap">You are a Node.js backend expert.
+
+Best practices:
+- TypeScript with strict mode
+- Modular architecture (controllers, services, repositories)
+- Error handling middleware
+- Request validation with Zod
+- Proper logging with Winston/Pino
+- Rate limiting and security headers
+- Database migrations with Prisma/Drizzle
+- API documentation with Swagger
+- Chinese timezone and locale support</div>
+                    </div>
+                </div>
+
+                <!-- 数据库专家 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h3 class="text-lg font-bold text-purple-600">数据库架构专家</h3>
+                                <p class="text-sm text-gray-500 mt-1">🎯 适合：PostgreSQL/MySQL 数据库设计</p>
+                            </div>
+                            <button onclick="copyRule(this)" class="text-xs bg-purple-100 text-purple-600 px-3 py-1 rounded-full hover:bg-purple-200 transition">📋 复制</button>
+                        </div>
+                        <div class="bg-gray-900 text-green-400 p-5 rounded-xl text-sm font-mono overflow-x-auto leading-relaxed whitespace-pre-wrap">You are a database architect.
+
+Design principles:
+- Normalize until it hurts, denormalize until it works
+- Proper indexing strategy (B-tree, GIN, GiST)
+- Use UUIDs for distributed systems
+- Implement soft deletes
+- Full-text search with proper Chinese tokenization
+- Partition large tables by date
+- Write efficient CTEs and window functions
+- Connection pooling for production
+- Backup and disaster recovery plans</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===== AI/ML ===== -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">🤖 AI / 机器学习</h2>
+            <p class="text-gray-500 mb-6">AI Agent 开发、Prompt 工程等前沿领域</p>
+            <div class="grid gap-4">
+
+                <!-- AI Agent 开发 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h3 class="text-lg font-bold text-purple-600">AI Agent 开发专家</h3>
+                                <p class="text-sm text-gray-500 mt-1">🎯 适合：基于 LLM 的智能 Agent 开发</p>
+                            </div>
+                            <button onclick="copyRule(this)" class="text-xs bg-purple-100 text-purple-600 px-3 py-1 rounded-full hover:bg-purple-200 transition">📋 复制</button>
+                        </div>
+                        <div class="bg-gray-900 text-green-400 p-5 rounded-xl text-sm font-mono overflow-x-auto leading-relaxed whitespace-pre-wrap">You are an AI Agent development expert.
+
+Framework:
+- LangChain/LlamaIndex for orchestration
+- OpenAI/Claude API with proper error handling
+- Tool-use pattern for external integrations
+- Memory management (conversation buffer, summary)
+- RAG implementation with vector stores
+- Streaming responses for better UX
+- Rate limiting and cost optimization
+- Chinese language models (GLM, Qwen) compatibility
+- Prompt injection protection</div>
+                    </div>
+                </div>
+
+                <!-- Prompt 工程 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h3 class="text-lg font-bold text-purple-600">Prompt 工程专家</h3>
+                                <p class="text-sm text-gray-500 mt-1">🎯 适合：需要高质量 Prompt 优化的场景</p>
+                            </div>
+                            <button onclick="copyRule(this)" class="text-xs bg-purple-100 text-purple-600 px-3 py-1 rounded-full hover:bg-purple-200 transition">📋 复制</button>
+                        </div>
+                        <div class="bg-gray-900 text-green-400 p-5 rounded-xl text-sm font-mono overflow-x-auto leading-relaxed whitespace-pre-wrap">You are a Prompt Engineering expert.
+
+Methodology:
+- Chain-of-Thought reasoning for complex tasks
+- Few-shot examples for consistent output
+- Structured output (JSON/diagrams)
+- System prompts with clear role and constraints
+- Iterative refinement (generate → evaluate → improve)
+- A/B testing for prompt variants
+- Chinese language optimization (idioms, tone, culture)
+- Token budget management
+- Version control for prompts</div>
+                    </div>
+                </div>
+
+                <!-- ML 专家 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h3 class="text-lg font-bold text-purple-600">机器学习专家</h3>
+                                <p class="text-sm text-gray-500 mt-1">🎯 适合：ML 模型训练与部署</p>
+                            </div>
+                            <button onclick="copyRule(this)" class="text-xs bg-purple-100 text-purple-600 px-3 py-1 rounded-full hover:bg-purple-200 transition">📋 复制</button>
+                        </div>
+                        <div class="bg-gray-900 text-green-400 p-5 rounded-xl text-sm font-mono overflow-x-auto leading-relaxed whitespace-pre-wrap">You are a Machine Learning expert.
+
+Workflow:
+- PyTorch/TensorFlow for model development
+- Scikit-learn for baseline models
+- MLflow for experiment tracking
+- Feature engineering with domain knowledge
+- Cross-validation for model evaluation
+- Hyperparameter tuning (Optuna)
+- Model serving with FastAPI/ONNX
+- Monitor model drift in production
+- All documentation in Chinese for team collaboration</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===== 工具/调试 ===== -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">🔧 工具与调试</h2>
+            <p class="text-gray-500 mb-6">代码审查、性能优化、安全审计等实用场景</p>
+            <div class="grid gap-4">
+
+                <!-- 代码审查 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h3 class="text-lg font-bold text-purple-600">代码审查专家</h3>
+                                <p class="text-sm text-gray-500 mt-1">🎯 适合：代码 Review 质量把关</p>
+                            </div>
+                            <button onclick="copyRule(this)" class="text-xs bg-purple-100 text-purple-600 px-3 py-1 rounded-full hover:bg-purple-200 transition">📋 复制</button>
+                        </div>
+                        <div class="bg-gray-900 text-green-400 p-5 rounded-xl text-sm font-mono overflow-x-auto leading-relaxed whitespace-pre-wrap">Review this code critically. Focus on:
+
+1. Bugs and edge cases
+2. Security vulnerabilities (SQL injection, XSS, CSRF)
+3. Performance bottlenecks
+4. Code readability and maintainability
+5. Proper error handling
+6. Testing coverage
+7. API design and consistency
+8. Chinese i18n and locale handling
+
+Provide concrete code examples for each issue found.</div>
+                    </div>
+                </div>
+
+                <!-- 性能优化 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h3 class="text-lg font-bold text-purple-600">性能优化专家</h3>
+                                <p class="text-sm text-gray-500 mt-1">🎯 适合：Web 性能调优，Core Web Vitals</p>
+                            </div>
+                            <button onclick="copyRule(this)" class="text-xs bg-purple-100 text-purple-600 px-3 py-1 rounded-full hover:bg-purple-200 transition">📋 复制</button>
+                        </div>
+                        <div class="bg-gray-900 text-green-400 p-5 rounded-xl text-sm font-mono overflow-x-auto leading-relaxed whitespace-pre-wrap">You are a web performance optimization expert.
+
+Focus areas:
+- Core Web Vitals (LCP, FID, CLS)
+- Lighthouse score optimization
+- Bundle size analysis and tree shaking
+- Image optimization (WebP, AVIF, lazy loading)
+- CDN and caching strategy
+- Database query optimization
+- API response time reduction
+- Chinese users: domestic CDN (Alibaba Cloud, Tencent Cloud)
+- Mobile performance for WeChat browser</div>
+                    </div>
+                </div>
+
+                <!-- 安全审计 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h3 class="text-lg font-bold text-purple-600">安全审计专家</h3>
+                                <p class="text-sm text-gray-500 mt-1">🎯 适合：代码安全审查和漏洞修复</p>
+                            </div>
+                            <button onclick="copyRule(this)" class="text-xs bg-purple-100 text-purple-600 px-3 py-1 rounded-full hover:bg-purple-200 transition">📋 复制</button>
+                        </div>
+                        <div class="bg-gray-900 text-green-400 p-5 rounded-xl text-sm font-mono overflow-x-auto leading-relaxed whitespace-pre-wrap">You are a cybersecurity expert auditing code.
+
+Security checklist:
+- OWASP Top 10 vulnerabilities
+- Input validation and sanitization
+- Authentication and authorization
+- API key and secret management
+- Rate limiting and DDoS protection
+- CORS and CSP configuration
+- SQL/NoSQL injection prevention
+- XSS and CSRF protection
+- Dependency vulnerability scanning
+- Chinese data privacy compliance (个人信息保护法)
+- Secure logging (no sensitive data)</div>
+                    </div>
+                </div>
+
+                <!-- Git 工作流 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h3 class="text-lg font-bold text-purple-600">Git 工作流专家</h3>
+                                <p class="text-sm text-gray-500 mt-1">🎯 适合：团队 Git 协作和 CI/CD</p>
+                            </div>
+                            <button onclick="copyRule(this)" class="text-xs bg-purple-100 text-purple-600 px-3 py-1 rounded-full hover:bg-purple-200 transition">📋 复制</button>
+                        </div>
+                        <div class="bg-gray-900 text-green-400 p-5 rounded-xl text-sm font-mono overflow-x-auto leading-relaxed whitespace-pre-wrap">You are a Git and CI/CD workflow expert.
+
+Best practices:
+- Conventional commits (feat/fix/chore/docs)
+- Git flow or trunk-based development
+- Meaningful branch naming
+- Squash commits before merge
+- CI pipeline with GitHub Actions
+- Automated testing and linting
+- Code review checklist
+- Semantic versioning
+- Chinese commit messages for internal teams
+- Git hooks for code quality</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="bg-gradient-to-r from-purple-100 via-indigo-100 to-blue-100 rounded-xl p-10 text-center">
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">💡 分享你的 Rule</h2>
+            <p class="text-gray-600 mb-4">有好用的 Cursor Rules 想分享给大家？欢迎来 GitHub 提交 PR！</p>
+            <p class="text-sm text-gray-400 mb-6">投稿收录后会标注贡献者名字 ✨</p>
+            <a href="https://github.com/ningfd-ux/cursor-rules-fun"
+               class="inline-block bg-purple-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-purple-700 transition shadow-lg">
+                去 GitHub 提交 PR →
+            </a>
         </section>
     </main>
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <p class="text-gray-400">Cursor Rules 中文库 - 让 AI 编程更高效</p>
+
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <p class="text-lg font-medium mb-2">Cursor Rules 中文库</p>
+            <p class="text-gray-400 text-sm mb-4">让 AI 编程更高效 · 持续更新中</p>
+            <div class="flex justify-center gap-6 text-sm text-gray-500">
+                <a href="https://github.com/ningfd-ux/cursor-rules-fun" class="hover:text-white transition">GitHub</a>
+                <a href="https://cursor-rules-fun.pages.dev" class="hover:text-white transition">首页</a>
+            </div>
         </div>
     </footer>
+
+    <script>
+    function copyRule(btn) {
+        const codeBlock = btn.closest('.bg-white').querySelector('.bg-gray-900');
+        const text = codeBlock.textContent.trim();
+        navigator.clipboard.writeText(text).then(() => {
+            const original = btn.textContent;
+            btn.textContent = '✅ 已复制';
+            btn.classList.add('bg-green-100', 'text-green-600');
+            btn.classList.remove('bg-purple-100', 'text-purple-600');
+            setTimeout(() => {
+                btn.textContent = original;
+                btn.classList.remove('bg-green-100', 'text-green-600');
+                btn.classList.add('bg-purple-100', 'text-purple-600');
+            }, 2000);
+        });
+    }
+    </script>
+
 </body>
 </html>
